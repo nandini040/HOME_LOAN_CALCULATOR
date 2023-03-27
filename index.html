@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Home Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2 class="header-heading">Nandini Home Loan Calculator</h2>
+      </header>
+
+      <div class="main">
+        <div class="center">
+          <h2 class="main-heading">
+            Get Started with Digital Credit Experience
+          </h2>
+          <p class="paragraph">Get your result within minutes</p>
+        </div>
+        <section>
+            <div class="left">
+                <div class="one common">
+                    <h3>Home Loan Amount (In Lacs)</h3>
+                    <div class="change">
+                        <span class="dollar"><sup>$</sup></span>
+                        <span class="price price-loan"><sub>0</sub></span>
+                    </div>
+                    <input type="range" min="0" max="200" value="0" class="loan-range">
+                </div>
+                <div class="two common">
+                    <h3>Interest Rate</h3>
+                    <div class="change">
+                        <span class="dollar"><sup>$</sup></span>
+                        <span class="price price-interest"><sub>0</sub></span>
+                    </div>
+                    <input type="range" min="0" max="20" value="0" class="interest-range">
+                </div>
+                <div class="three common">
+                    <h3>Time Period (In Years)</h3>
+                    <span class="price special time">0</span>
+                    <input type="range" min="0" max="30" value="0" class="time-range">
+
+                </div>
+                <div class="calculate-button"><button class="calculate">Calculate</button></div>
+            </div>
+        <div class="right">
+            <h2>Your EMI/Month is:- </h2>
+            <div class="price-active">
+                <span class="dollar-special"><sup>$</sup></span>
+                <span class="price-special zero"><sub>0</sub></span>
+            </div>
+            <div class="flex">
+                <div class="hello">
+                    <h2>Rate</h2>
+                    <span class="right-fill zero">0</span>
+                </div>
+                <div class="hello">
+                    <h2>Amount</h2>
+                    <span class="right-fill-1  zero">0</span>
+                </div>
+                <div class="hello">
+                    <h2>Years</h2>
+                    <span class="right-fill-2 zero">0</span>
+                </div>
+            </div>
+        </div>
+        </section>
+      </div>
+    </div>  
+  </body>
+</html>

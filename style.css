@@ -1,0 +1,209 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 1000px;
+    width: 90%;
+    background: #243b55;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container header{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #243b55;
+    padding: 0.4em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 2rem;
+}
+
+.center{
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+section .left{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 1.5rem;
+}
+
+.common{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* border: 2px solid red; */
+}
+
+.common h3{
+    font-size: 1.5rem;
+}
+
+.common .change{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.common .special{
+    font-size: 1.5rem;
+}
+
+input{
+    /* border: 2px solid red; */
+    width: 80%;
+    height: 4px;
+}
+
+.calculate{
+    font-size: 1.2rem;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid grey;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.calculate:hover{
+    background:#141e30;
+}
+
+section .right{
+    flex-basis: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 2em;
+}
+
+section .flex{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* border: 2px solid red; */
+}
+
+.price-active{
+    margin-bottom: 1rem;
+}
+
+.dollar-special sup{
+    font-size: 1.5rem;
+}
+.price-active .price-special{
+    font-size: 4rem;
+}
+
+.zero{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1068px){
+    .section .right{
+        flex-basis: 60%;
+    }
+    .section .left{
+        flex-basis: 50%;
+    }
+    .dollar-special sup{
+        font-size: 1rem;
+    }
+    .price-active .price-special{
+        font-size: 2rem;
+    }
+    
+    .zero{
+        font-size: 1rem;
+    }
+    body{
+        height: auto;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    section{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    section .right{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    input{
+        width: 100%;
+    }
+    .main-heading{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .header-heading{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .paragraph{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:468px){
+    .center{
+        padding:0 1em;
+    }
+    .common h3{
+        font-size: 1.1rem;
+    }
+    .right h2{
+        font-size: 1.1rem;
+    }
+    section .right{
+        padding: 1em;
+    } 
+}
